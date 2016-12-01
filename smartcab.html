@@ -19024,7 +19024,7 @@ kiRJkiRJ6oXBlCRJkiRJknrxX29lg0NaXIzuAAAAAElFTkSuQmCC
 <div class="text_cell_render border-box-sizing rendered_html">
 <p><strong>Answer:</strong></p>
 <p>Example of potimal policy:</p>
-<p>Never stop when light is green.</p>
+<p>Never take 'None' action when light is green.</p>
 <p>Never go left or straight when light is red.</p>
 <p>Example from 'sim_improved-learning.txt':</p>
 <p>('forward', 'green', None, 'forward')</p>
@@ -19033,7 +19033,7 @@ kiRJkiRJ6oXBlCRJkiRJknrxX29lg0NaXIzuAAAAAElFTkSuQmCC
 <p>-- right : 0.72</p>
 <p>-- left : -20.59</p>
 <p>The reward policy is consistent from the optimal policy derived from rule,take above log for example:</p>
-<p>When the light is green, the car should always move, take no action gives a negative reward, since it is a major violent of rule. Moving forward and right gives both positive reward, go straight is more than go right. When there are ongoing car go straight, the agent should never go left, since it cause major accident, which gives significant negative reward.</p>
+<p>When the light is green, the car should always move left, forward or right, take 'none' action gives a negative reward, since it is a major violent of rule. Moving forward and right gives both positive reward, go straight is more than go right. When there are ongoing car go straight, the agent should never go left, since it cause major accident, which gives significant negative reward.</p>
 
 </div>
 </div>
@@ -19065,8 +19065,6 @@ kiRJkiRJ6oXBlCRJkiRJknrxX29lg0NaXIzuAAAAAElFTkSuQmCC
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p><strong>Answer:</strong></p>
-<p>One factor could be that the environment always change randomly, so the agent could not associate particular state with a place.</p>
-<p>Another factor could be that the goal of smartcab is to reach destination, only then could be considered reliable. Maximize score does not help smartcab reach its goal, but only prevent it from accident or rule violent.</p>
 
 </div>
 </div>
